@@ -179,6 +179,7 @@ let roster = [{
 
                 let randomIndex;
                 let animating = false;
+                let button;
 
 function setup(){
   createCanvas(600, 600);
@@ -187,6 +188,7 @@ function setup(){
 console.log(random(roster).firstName);
 
 createButton("randomize");
+button.mousePressed(buttonPressed);
 }
 
 function draw(){
@@ -220,7 +222,7 @@ function draw(){
     }
   }
 
-  function mousePressed() {
+  function buttonPressed() {
   animating = true;
     setTimeout(randomizer, 2000);
 
