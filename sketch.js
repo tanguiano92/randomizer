@@ -201,6 +201,7 @@ let spooky = [];
 let imageCounter = 0;
 let button;
 let cnvs;
+let nameInputs = [];
 
 function preload() {
 
@@ -223,6 +224,10 @@ function setup() {
   button = select("#randButton");
   button.mousePressed(buttonPressed);
   button.class("randomizerButton");
+
+nameInputs.push(createInput());
+nameInputs[nameInputs.length - 1].parent("#inputFields");
+
 }
 
 function draw() {
