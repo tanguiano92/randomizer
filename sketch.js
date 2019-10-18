@@ -179,12 +179,21 @@ let roster = [{
 
                 let randomIndex;
                 let animating = false;
-                let 
+                let spooky = [];
                 let button;
+
+function preload(){
+
+  for (let i = 0; i <= 15; i++){
+    spooky[i] = loadImage(`assets/spooky_${i}.jpg`)
+  }
+
+}
 
 function setup(){
   createCanvas(600, 600);
   background(200);
+console.log(spooky);
 
 console.log(random(roster).firstName);
 button = createButton("randomize");
