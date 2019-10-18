@@ -11,3 +11,11 @@ padding: 30px;
 background-color: #91093f;
 
 }
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}

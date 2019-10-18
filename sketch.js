@@ -200,6 +200,7 @@ let animating = false;
 let spooky = [];
 let imageCounter = 0;
 let button;
+let cnvs;
 
 function preload() {
 
@@ -210,8 +211,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 600);
-  background(200);
+  cnvs = createCanvas(600, 600);
+  cnvs.parent("#canvasDiv");
+
+  background(255);
   textSize(24);
   imageMode(CENTER);
   frameRate(8);
