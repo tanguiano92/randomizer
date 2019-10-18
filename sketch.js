@@ -179,6 +179,7 @@ let roster = [{
 
                 let randomIndex;
                 let animating = false;
+                let 
                 let button;
 
 function setup(){
