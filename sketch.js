@@ -188,8 +188,7 @@ function setup(){
 console.log(random(roster).firstName);
 button = createButton("randomize");
 button.mousePressed(buttonPressed);
-button.style("padding","30px");
-button.style("background-color", "#91093f");
+button.class("randomizerButton");
 }
 
 function draw(){
