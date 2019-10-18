@@ -186,8 +186,7 @@ function setup(){
   background(200);
 
 console.log(random(roster).firstName);
-
-createButton("randomize");
+button = createButton("randomize");
 button.mousePressed(buttonPressed);
 }
 
