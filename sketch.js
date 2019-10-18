@@ -225,8 +225,11 @@ function setup() {
   button.mousePressed(buttonPressed);
   button.class("randomizerButton");
 
+for (let i = 0; i < 3; i++){
 nameInputs.push(createInput());
-nameInputs[nameInputs.length - 1].parent("#inputFields");
+nameInputs[nameInputs.length -
+  1].parent("#inputFields");
+}
 
 }
 
