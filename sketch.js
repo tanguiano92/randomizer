@@ -184,7 +184,7 @@ let roster = [{
 
 function preload(){
 
-  for (let i = 0; i <= 15; i++){
+  for (let i = 0; i <= 11; i++){
     spooky[i] = loadImage(`assets/spooky_${i}.jpg`)
   }
 
