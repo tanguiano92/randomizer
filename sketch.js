@@ -216,10 +216,8 @@ function setup() {
   imageMode(CENTER);
   frameRate(8);
 
-  console.log(spooky);
-
-  console.log(random(roster).firstName);
-  button = createButton("randomize");
+  //button = createButton("randomize");
+  button = select("#randButton");
   button.mousePressed(buttonPressed);
   button.class("randomizerButton");
 }
